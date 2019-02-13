@@ -6,7 +6,7 @@ html, body{
 }
 .header{
     height: 100vh;
-    background-image: url(../img/pexels-photo-1211787.jpeg);
+    background-image: url(../img/pexels-photo-326410.jpeg);
     color: #fff;
 }
 .header-top{
@@ -15,6 +15,7 @@ html, body{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    align-items: center;
 
     &__logo{
         display: flex;
@@ -23,14 +24,22 @@ html, body{
         align-items: center;
     }
 
+    &__logo p{
+        margin-left:12px; 
+    }
+
     &__phone{
         text-align: right;
+    }
 
-        &-link{
-            text-decoration: none;
-            border-bottom: 2px dashed #fff;
-            color: #fff;
-        }
+    &__phone h1{
+        margin-bottom: 1px; 
+    }
+    
+    &__phone-link{
+        text-decoration: none;
+        border-bottom: 2px dashed #fff;
+        color: #fff;
     }
 }
 
@@ -39,31 +48,219 @@ html, body{
     margin: 0 auto;
     margin-top: 12%;
 
-    &__title{
-        &-txt{
-            text-align: center;
-            font-size: 90px;
-            text-transform: uppercase;
-            margin: 0 auto 40px;
-        }
+    &__title-txt{
+        text-align: center;
+        font-size: 90px;
+        text-transform: uppercase;
+        margin: 0 auto 40px;
     }
     &__paragraph{
         text-align: center;
+        font-size: 30px;
+    }
+}
 
-        &-txt{
-            font-size: 30px;
-        }
+.header-bottom{
+    display: flex;
+    justify-content: center;
 
-        &-button{
-            color: #fff;
-            background-color: #0094d0;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            text-decoration: none;
-            text-align: center;
-            margin-top: 32px;
-        }
+    &__btn{
+        color: #fff;
+        background-color: #0094d0;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 1%;
+        cursor: pointer;
     } 
 }
 
+/*-MAIN-*/
+
+.main{
+    width: 100%;
+}
+.main-info {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    &__box{
+        display: flex;
+        color: #0094d0;
+        margin: 30px;
+    }
+    &__box h1 {
+        font-size: 70px;
+        margin: 0;
+    }
+    &__box p {
+        color: #000;
+    }
+    &__box-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__box-right {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__box-right p{
+        text-align: left;
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+
+.main-product{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &__top{
+        margin: 0 auto;
+        font-size: 50px;
+        text-align: center;
+        margin: 7% 0 7% 0;
+    }
+
+    &__middle{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5%;
+    }
+
+    &__middle-bg{
+        background: url(../img/school-colorful-colourful-colors.jpg) no-repeat;
+        background-size: cover; 
+        height: 240px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #fff;
+    }
+    &__middle-bg h3{
+        font-size: 17px;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0 2% 2%;
+    }
+
+    &__middle-bg p{
+        margin: 0;
+        font-size: 14px;
+        padding: 0 2% 10%;
+        background: linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0));
+    }
+
+
+    &__bottom-title{
+        margin-bottom: 5%;
+    }
+
+    &__bottom-title h1{
+        color: #0094d0;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    &__bottom-title p{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 7px;
+    }
+}
+
+
+.main-form{
+    background-color: #0094d0;
+    width: 100%;
+}
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    &__txt{
+        width: 40%;
+    }
+
+    &__box{
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box-input input{
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        margin: 10px 0;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/*---------------------*/
+
+@media screen and (max-width:1080px) {
+    .header-middle{
+
+        &__title-txt{
+            font-size: 70px;
+        }
+        &__paragraph-txt{
+            font-size: 25px;
+        }
+    }
+}
+@media screen and (max-width:870px) {
+    .header{
+        height: 650px;
+    }
+    .header-top{
+        &__logo p{
+            display: none;
+        }
+        &__phone a{
+            display: none;
+        }
+    }
+
+    .header-middle{
+
+        &__title-txt{
+            font-size: 58px;
+        }
+        &__paragraph-txt{
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header-middle{
+
+        &__title-txt{
+            font-size: 42px;
+        }
+        &__paragraph-txt{
+            font-size: 19px;
+        }
+    }
+}
