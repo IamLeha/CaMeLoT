@@ -6,7 +6,7 @@ html, body{
 }
 .header{
     height: 100vh;
-    background-image: url(../img/pexels-photo-326410.jpeg);
+    background-image: linear-gradient(-45deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)),url(../img/pexels-photo-326410.jpeg);
     color: #fff;
 }
 .header-top{
@@ -47,6 +47,7 @@ html, body{
     width: 80%;
     margin: 0 auto;
     margin-top: 12%;
+    
 
     &__title-txt{
         text-align: center;
@@ -333,7 +334,14 @@ html, body{
 
 .footer{
     width: 100%;
-    padding-bottom: 3%;
+    padding: 3% 0;
+    position: relative;
+    overflow: hidden;
+    
+    &__video{
+        position: absolute;
+        z-index: -1000;
+    }
 }
 .footer-container{
     width: 80%;
@@ -341,7 +349,6 @@ html, body{
 
     &__title {
         text-align: center;
-        margin-bottom: 10%;
     }
 
     &__title h1{
@@ -359,6 +366,36 @@ html, body{
         margin-bottom: 7%;
     }
 
+    &__form-input input{
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        margin: 10px 0;
+        padding-bottom: 5px;
+        cursor: pointer;
+        width: 180px;
+        height: 30px;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 17px;
+
+        }
+    }
+
+    &__form-btn button{
+        width: 250px;
+        height: 45px;
+        cursor: pointer;
+        background-color: #fbdc09;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase
+    }
+
     &__about{
         display: flex;
         justify-content: space-between;
@@ -373,6 +410,10 @@ html, body{
 
         &__box-item h1{
             margin: 0;
+        }
+
+        &__box-item-par{
+            padding-left: 14%; 
         }
 
         &__box-item-card{
