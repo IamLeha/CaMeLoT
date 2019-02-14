@@ -149,8 +149,11 @@ html, body{
         font-size: 17px;
         margin: 0;
         margin-bottom: 10px;
+        margin: 0 2% ;
         padding: 0 2% 2%;
+        border-left: 3px solid #0094d0;
     }
+    
 
     &__middle-bg p{
         margin: 0;
@@ -199,10 +202,10 @@ html, body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__box-input input{
-        width: 100%;
         background: transparent;
         border: none;
         border-bottom: 1px solid #fff;
@@ -210,8 +213,194 @@ html, body{
         margin: 10px 0;
         padding-bottom: 5px;
         cursor: pointer;
+        width: 180px;
+        height: 30px;
+
+        &::placeholder {
+            color: #fff;
+            font-size: 17px;
+
+        }
+    }
+
+    &__box-btn button{
+        width: 180px;
+        height: 35px;
+        cursor: pointer;
+        background-color: #fbdc09;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        color: #000;
+        text-transform: uppercase
     }
 }
+
+.main-aplication{
+    width: 100%;
+}
+.aplication-container{
+    width: 80%;
+    margin: 0 auto;
+
+    &__title{
+        text-align: center;
+        margin: 5% 0;
+    }
+
+    &__box{
+
+
+        &__line{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5%;
+            justify-content: space-between;
+        }
+
+        &__line-item{
+            background: url(../img/paper-colorful-color-loose-40799.jpeg) no-repeat;
+            background-size: cover; 
+            height: 240px;
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: #fff;
+        }
+
+        &__line-item h1{
+            font-size: 17px;
+            margin: 0;
+            margin-bottom: 10px;
+            margin: 2% 12% ;
+            padding: 0 2% 2%;
+            border-left: 3px solid #0094d0;
+        }
+
+        &__line-item p{
+            margin: 0;
+            font-size: 14px;
+            padding: 0 12% 10%;
+            background: linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0));
+        }
+        
+
+    }
+}
+#mar{
+    margin: 0 20px ;
+}
+
+.main-delivery{
+    width: 100%;
+}
+.delivery-container{
+    width: 80%;
+    margin: 0 auto;
+
+    &__title{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    &__middle{
+        background: url(../img/e70a703bd1c0308045f27cea3d6925b3.png);
+        width: 100%;
+        height: 400px;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 50px;
+    }
+    &__middle-txt h3{
+        color: #0094d0;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    &__middle-txt p{
+        font-size: 24px;
+        margin: 0;
+        font-weight: 700;
+    }
+    &__bottom{
+        margin-bottom: 5%;
+    }
+    &__bottom-txt{
+        font-size: 0.8rem;
+        color: #8e8e8e;
+    }
+}
+
+.footer{
+    width: 100%;
+    padding-bottom: 3%;
+}
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    &__title h1{
+        font-size: 42px;
+    }
+
+    &__title p{
+        font-size: 24px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 13%;
+        margin-bottom: 7%;
+    }
+
+    &__about{
+        display: flex;
+        justify-content: space-between;
+        border: 3px solid #fbdc09;
+        padding: 30px;
+
+        &__box{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__box-item h1{
+            margin: 0;
+        }
+
+        &__box-item-card{
+            display: flex;
+            align-items: center;
+        }
+
+        &__box-item-card h1{
+            display: flex;
+            margin: 0;
+        }
+
+        &__box-item-card img{
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
 
 
 
