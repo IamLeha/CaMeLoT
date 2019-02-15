@@ -257,7 +257,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     margin-right: 13%;
-    margin-bottom: 7%; }
+    margin: 5% 0; }
   .footer-container__form-input input {
     background: transparent;
     border: none;
