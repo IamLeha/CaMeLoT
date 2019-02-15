@@ -32,9 +32,7 @@ html, body{
         text-align: right;
     }
 
-    &__phone h1{
-        margin-bottom: 1px; 
-    }
+    
     
     &__phone-link{
         text-decoration: none;
@@ -88,11 +86,11 @@ html, body{
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 40px;
 
     &__box{
         display: flex;
         color: #0094d0;
-        margin: 30px;
     }
     &__box h1 {
         font-size: 70px;
@@ -137,21 +135,19 @@ html, body{
     }
 
     &__middle-bg{
-        background: url(../img/school-colorful-colourful-colors.jpg) no-repeat;
+        background:linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)), url(../img/school-colorful-colourful-colors.jpg) no-repeat;
         background-size: cover; 
-        height: 240px;
         width: 45%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
         color: #fff;
+        padding: 5% 10px;
     }
     &__middle-bg h3{
         font-size: 17px;
-        margin: 0;
-        margin-bottom: 10px;
-        margin: 0 2% ;
-        padding: 0 2% 2%;
+        margin: 0 0 12px 0;
+        padding-left: 5px;
         border-left: 3px solid #0094d0;
     }
     
@@ -159,8 +155,6 @@ html, body{
     &__middle-bg p{
         margin: 0;
         font-size: 14px;
-        padding: 0 2% 10%;
-        background: linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0));
     }
 
 
@@ -250,48 +244,38 @@ html, body{
     }
 
     &__box{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__box-item{
+        background:linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)), url(../img/paper-colorful-color-loose-40799.jpeg) no-repeat;
+        background-size: cover; 
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #fff;
+        padding: 3% 15px;
+        margin-bottom: 7%;
+    }
 
+    &__box-item h1{
+        font-size: 17px;
+        border-left: 3px solid #0094d0;
+    }
 
-        &__line{
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 5%;
-            justify-content: space-between;
-        }
-
-        &__line-item{
-            background: url(../img/paper-colorful-color-loose-40799.jpeg) no-repeat;
-            background-size: cover; 
-            height: 240px;
-            width: 25%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            color: #fff;
-        }
-
-        &__line-item h1{
-            font-size: 17px;
-            margin: 0;
-            margin-bottom: 10px;
-            margin: 2% 12% ;
-            padding: 0 2% 2%;
-            border-left: 3px solid #0094d0;
-        }
-
-        &__line-item p{
-            margin: 0;
-            font-size: 14px;
-            padding: 0 12% 10%;
-            background: linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0));
-        }
+    &__box-item p{
+        margin: 0;
+        font-size: 14px;
+    }
         
 
     }
-}
-#mar{
-    margin: 0 20px ;
-}
+
+
 
 .main-delivery{
     width: 100%;
@@ -307,6 +291,7 @@ html, body{
 
     &__middle{
         background: url(../img/e70a703bd1c0308045f27cea3d6925b3.png);
+        background-size: cover;
         width: 100%;
         height: 400px;
         display: flex;
@@ -346,6 +331,7 @@ html, body{
 .footer-container{
     width: 80%;
     margin: 0 auto;
+    color: #fff;
 
     &__title {
         text-align: center;
@@ -410,6 +396,7 @@ html, body{
 
         &__box-item h1{
             margin: 0;
+            color: #fff;
         }
 
         &__box-item-par{
@@ -421,7 +408,7 @@ html, body{
             align-items: center;
         }
 
-        &__box-item-card h1{
+        &__box-item-card h2{
             display: flex;
             margin: 0;
         }
@@ -448,7 +435,8 @@ html, body{
 
 /*---------------------*/
 
-@media screen and (max-width:1080px) {
+
+@media  screen and (max-width : 1080px) {
     .header-middle{
 
         &__title-txt{
@@ -459,10 +447,10 @@ html, body{
         }
     }
 }
+
+
 @media screen and (max-width:870px) {
-    .header{
-        height: 650px;
-    }
+    
     .header-top{
         &__logo p{
             display: none;
@@ -481,16 +469,219 @@ html, body{
             font-size: 22px;
         }
     }
+    .main-info__box-left h1{
+        font-size: 60px;
+    }
+
+    .footer-container{
+        
+        &__about{
+
+            &__box h1{
+                font-size: 20px; 
+            }
+        }
+
+    }
 }
 
-@media screen and (max-width:576px) {
+
+
+
+@media  screen and (max-width : 768px) {
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            margin-top: 7%
+        }
+        &__box-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .main-product{
+
+        &__middle{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &__middle-bg{
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+        }
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #fff;
+
+        &__txt{
+            width: 100%;
+        }
+
+        &__box{
+            width: 100%;
+        }
+    }
+
+    .aplication-container{
+
+        &__box-item{
+            width: 38%;
+        }
+    }
+
+
+    .footer-container{
+        
+        &__about{
+            display: flex;
+            flex-direction: column;
+
+            &__box-item-par {
+                padding-left: 0;
+            }
+
+            &__box-item-card {
+                margin-top: 20px;
+            }
+        }
+
+        &__form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+
+
+@media  screen and (max-width: 576px) {
+
+    .header-top__phone h1{
+        font-size: 17px;
+    }
+
     .header-middle{
 
         &__title-txt{
-            font-size: 42px;
+            font-size: 60px;
         }
         &__paragraph-txt{
             font-size: 19px;
         }
     }
+
+    .main-product{
+
+        &__top{
+            font-size: 30px;
+        }
+
+        &__middle-bg h3{
+            font-size: 14px;
+            margin: 0 10px;
+        }
+        &__middle-bg p{
+            margin: 0 10px;
+        }
+
+        &__middle-bg{
+            font-size: 11px;
+            padding: 5% 0;
+        }
+    }
+
+
+    .aplication-container{
+
+        &__title h1{
+            font-size: 26px;
+        }
+
+
+        &__box-item{
+            width: 100%;
+        }
+    }
+
+    .delivery-container{
+        &__middle{
+            height: 250px;
+        }
+    }
+
+    .footer{
+        background: #0094d0;
+    }
 }
+
+
+@media screen and (max-width: 480px){
+
+    .header-top__logo{
+        width: 100px;
+    }
+
+    .header-middle{
+
+        &__title-txt{
+            font-size: 50px;
+        }
+        &__paragraph-txt{
+            font-size: 17px;
+        }
+    }
+
+    .aplication-container{
+
+        &__title h1{
+            font-size: 22px;
+        }
+    }
+
+    .delivery-container{
+        &__middle{
+            height: 300px;
+        }
+    }
+
+    .footer-container{
+
+        &__title h1{
+            font-size: 32px; 
+        }
+
+        &__title p{
+            font-size: 17px;
+        }
+
+        &__about{
+            padding: 5px;
+        }
+
+        &__box-btn button{
+            width: 250px;
+        }
+
+    }
+
+    .form-container__box-btn button{
+        width: 250px;
+    }
+}
+
+
