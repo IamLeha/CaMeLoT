@@ -146,7 +146,7 @@ html, body {
 .form-container {
   width: 80%;
   margin: 0 auto;
-  padding: 2% 0;
+  padding: 2% 0 32px 0;
   display: flex;
   justify-content: space-between;
   color: #fff; }
