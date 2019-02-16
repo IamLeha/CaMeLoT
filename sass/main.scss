@@ -3,19 +3,23 @@ html, body{
     margin: 0;
     width: 100%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    overflow: hidden;
 }
 .header{
     height: 100vh;
-    background-image: linear-gradient(-45deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)),url(../img/pexels-photo-326410.jpeg);
+    background-image: linear-gradient(-45deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)),url(../img/bg.jpeg);
     color: #fff;
 }
 .header-top{
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+    padding: 2px;
 
     &__logo{
         display: flex;
@@ -32,8 +36,12 @@ html, body{
         text-align: right;
     }
 
-    
-    
+    &__phone h1{
+        text-align: right;
+        margin-bottom: 5px;
+    }
+
+
     &__phone-link{
         text-decoration: none;
         border-bottom: 2px dashed #fff;
@@ -125,7 +133,7 @@ html, body{
         margin: 0 auto;
         font-size: 50px;
         text-align: center;
-        margin: 7% 0 7% 0;
+        margin: 5% 0;
     }
 
     &__middle{
@@ -135,12 +143,13 @@ html, body{
     }
 
     &__middle-bg{
-        background:linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)), url(../img/school-colorful-colourful-colors.jpg) no-repeat;
-        background-size: cover; 
+        background:linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)), url(../img/pexels-photo-1298601.jpeg) no-repeat;
+        background-size: cover;
+        height: 240px;
         width: 45%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         color: #fff;
         padding: 5% 10px;
     }
@@ -157,9 +166,12 @@ html, body{
         font-size: 14px;
     }
 
+    &__bottom {
+        margin-bottom: 60px;
+    }
 
     &__bottom-title{
-        margin-bottom: 5%;
+        margin-bottom: 40px;
     }
 
     &__bottom-title h1{
@@ -200,6 +212,10 @@ html, body{
         flex-wrap: wrap;
     }
 
+    &__box-input{
+        width: 30%;
+    }
+
     &__box-input input{
         background: transparent;
         border: none;
@@ -208,7 +224,7 @@ html, body{
         margin: 10px 0;
         padding-bottom: 5px;
         cursor: pointer;
-        width: 180px;
+        width: 100%;
         height: 30px;
 
         &::placeholder {
@@ -218,13 +234,18 @@ html, body{
         }
     }
 
+    &__box-btn{
+        width: 33%;
+    }
+
     &__box-btn button{
-        width: 180px;
+        width: 100%;
         height: 35px;
         cursor: pointer;
         background-color: #fbdc09;
+        border-radius: 2px; 
         border: none;
-        padding: 10px 20px;
+        padding: 10px 10px;
         text-align: center;
         color: #000;
         text-transform: uppercase
@@ -243,6 +264,10 @@ html, body{
         margin: 5% 0;
     }
 
+    &__paragraph {
+        margin-bottom: 50px;
+    }
+
     &__box{
         
         display: flex;
@@ -250,9 +275,9 @@ html, body{
         justify-content: space-between;
     }
     &__box-item{
-        background:linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)), url(../img/paper-colorful-color-loose-40799.jpeg) no-repeat;
+        background:linear-gradient(0deg, rgb(43, 41, 41) 1%, rgba(0,0,0,0)), url(../img/01a5e35ba1131f764f1afca3580d2f49.jpg) no-repeat;
         background-size: cover; 
-        width: 25%;
+        width: 30%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -265,6 +290,7 @@ html, body{
     &__box-item h1{
         font-size: 17px;
         border-left: 3px solid #0094d0;
+        padding-left: 5px;
     }
 
     &__box-item p{
@@ -282,7 +308,7 @@ html, body{
 }
 .delivery-container{
     width: 80%;
-    margin: 0 auto;
+    margin: 60px auto;
 
     &__title{
         text-align: center;
@@ -309,7 +335,7 @@ html, body{
         font-weight: 700;
     }
     &__bottom{
-        margin-bottom: 5%;
+        margin-bottom: 60px;
     }
     &__bottom-txt{
         font-size: 0.8rem;
@@ -319,7 +345,6 @@ html, body{
 
 .footer{
     width: 100%;
-    padding: 3% 0;
     position: relative;
     overflow: hidden;
     
@@ -350,6 +375,13 @@ html, body{
         justify-content: space-between;
         margin-right: 13%;
         margin: 5% 0;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__form-input{
+        width: 30%;
     }
 
     &__form-input input{
@@ -360,7 +392,7 @@ html, body{
         margin: 10px 0;
         padding-bottom: 5px;
         cursor: pointer;
-        width: 180px;
+        width: 100%;
         height: 30px;
 
         &::placeholder {
@@ -370,11 +402,16 @@ html, body{
         }
     }
 
+    &__form-btn{
+        width: 30%;
+    }
+
     &__form-btn button{
-        width: 250px;
+        width: 100%;
         height: 45px;
         cursor: pointer;
         background-color: #fbdc09;
+        border-radius: 3px;
         border: none;
         padding: 10px 20px;
         text-align: center;
@@ -382,12 +419,13 @@ html, body{
         text-transform: uppercase
     }
 
+
     &__about{
         display: flex;
         justify-content: space-between;
         border: 3px solid #fbdc09;
         padding: 30px;
-
+    
         &__box{
             display: flex;
             flex-direction: column;
@@ -406,10 +444,15 @@ html, body{
         &__box-item-card{
             display: flex;
             align-items: center;
+            margin-top: 10px;
         }
 
         &__box-item-card h2{
             display: flex;
+            margin: 0;
+        }
+
+        &__box-item-card h3{
             margin: 0;
         }
 
@@ -422,7 +465,9 @@ html, body{
 
 }
 
-
+#mar{
+    margin-right: 30px;
+}
 
 
 
@@ -437,6 +482,13 @@ html, body{
 
 
 @media  screen and (max-width : 1080px) {
+    .header-top{
+
+        &__phone h1{
+            font-size: 25px;
+        }
+    }
+
     .header-middle{
 
         &__title-txt{
@@ -446,10 +498,21 @@ html, body{
             font-size: 25px;
         }
     }
+
+    .form-container{
+
+        &__box-input{
+            width: 45%;
+        }
+
+        &__box-btn{
+            width: 100%;
+        }
+    }
 }
 
 
-@media screen and (max-width:870px) {
+@media screen and (max-width : 870px) {
     
     .header-top{
         &__logo p{
@@ -461,6 +524,7 @@ html, body{
     }
 
     .header-middle{
+        margin-top: 30%;
 
         &__title-txt{
             font-size: 58px;
@@ -474,6 +538,15 @@ html, body{
     }
 
     .footer-container{
+
+        &__form-input{
+            width: 45%;
+        }
+
+        &__form-btn {
+            width: 50%;
+            margin: 0 auto;
+        }
         
         &__about{
 
@@ -482,13 +555,25 @@ html, body{
             }
         }
 
+        &__about h1{
+            font-size: 24px;
+        }
+
     }
+
+
+
 }
 
 
 
 
 @media  screen and (max-width : 768px) {
+    
+    .header-middle{
+        margin-top: 30%;
+    }
+
     .main-info {
         display: flex;
         flex-direction: column;
@@ -557,12 +642,10 @@ html, body{
                 margin-top: 20px;
             }
         }
+    }
 
-        &__form {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+    #mar{
+        margin-right: 0;
     }
 }
 
@@ -619,6 +702,11 @@ html, body{
     }
 
     .delivery-container{
+
+        &__title h1{
+            font-size: 28px;
+        }
+
         &__middle{
             height: 250px;
         }
@@ -626,6 +714,23 @@ html, body{
 
     .footer{
         background: #0094d0;
+    }
+
+    .footer-container{
+
+        &__form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__form-input{
+            width: 100%;
+        }
+
+        &__form-btn{
+            width: 100%;
+        }
     }
 }
 
@@ -637,6 +742,7 @@ html, body{
     }
 
     .header-middle{
+        margin-top: 12%;
 
         &__title-txt{
             font-size: 50px;
@@ -659,6 +765,22 @@ html, body{
         }
     }
 
+    .form-container{
+
+        &__box{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__box-input{
+            width: 100%;
+        }
+
+        &__box-btn{
+            width: 100%;
+        }
+    }
+
     .footer-container{
 
         &__title h1{
@@ -673,15 +795,21 @@ html, body{
             padding: 5px;
         }
 
-        &__box-btn button{
-            width: 250px;
+        &__about__box-item-card h2{
+            font-size: 20px;
         }
 
-    }
+        &__about__box-item-card h3{
+            font-size: 16px;
+        }
 
-    .form-container__box-btn button{
-        width: 250px;
+
     }
 }
 
 
+@media screen and (max-width: 820px) and (max-height: 380px){
+    .header{
+        height: 650px;
+    }
+}
